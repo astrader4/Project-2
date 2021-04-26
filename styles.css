@@ -1,9 +1,41 @@
-.main-nav {
+.main-nav span{
     color: blue;
 }
 
+.search {
+    display: flex;
+
+}
+
+.marker {
+    background-color: lightgrey;
+    height: 23px;
+    width: 33px;
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+    text-align: center;
+    padding-top: 12px;
+    vertical-align: middle;
+    margin-left: -6px;
+    font-size: 0.75rem;
+    }
+
+.bar {
+    height: 35px;
+    border-color: white;
+    
+}
+
+.button {
+    background-color: #0065FC;
+    color: white;
+    height: 35px;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
 .icon {
-    background-color: lightblue;
+    background-color: #DEEBFF;
     height: 25px;
     width: 33px;
     border-radius: 50%;
@@ -11,7 +43,7 @@
     padding-top: 12px;
     vertical-align: middle;
     margin-left: -6px;
-    color: blue;
+    color: #0065FC;
     font-size: 0.75rem;
 }
 
@@ -22,9 +54,13 @@
     font-size: 0.75rem;
     padding: 0 8px 0 4px;
     text-align: unset;
-    margin: 8px;
+    margin: 6px;
   }
 
-  .btn-wrap Filters {
-      font-size: 1rem;
+  .inform {
+      border-radius: 50%;
+      padding: 5px;
+      background-color: white;
+      border-color: grey;
+      color: #0065FC;
   }
