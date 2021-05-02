@@ -23,7 +23,7 @@
     vertical-align: middle;
     margin-left: -6px;
     font-size: 0.75rem;
-    }
+}
 
 .bar {
     height: 35px;
@@ -41,6 +41,8 @@
 
 .btn-wrap {
     display: inline-flex;
+    width: 60%;
+    justify-content: space-between;
 }
 
 .filt{
@@ -65,7 +67,7 @@
     background-color: white;
     border-radius: 20px;
     border-color: lightgray;
-    font-size: 0.75rem;
+    font-size: 1rem;
     padding: 0 8px 0 4px;
     text-align: unset;
     margin: 6px;
@@ -83,14 +85,104 @@
     color: #0065FC;
 }
 
+.section-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+.section-wrap h3{
+    position:relative;
+    left: 2.5%;
+}
+
+.accomm h2 {
+    position: relative;
+    left: 2.5%;
+}
 .accomm {
     background-color: #f2f2f2;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 10px;
+    width: 60%;
 }
 
 .accomm-card-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.card {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    width: 25%;
+    margin: 2%;
+}
+
+.card img{
+    object-fit: cover;
+    height: 125px;
+    width: 100%;
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
+}
+
+.card a{
+    color: black;
+    text-decoration: none;
+}
+
+.card p{
+    position: relative;
+    left: 2.5%;
+}
+.popular {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 10px;
+    width: 35%;
+}
+
+.popular h2{
+    position: relative;
+    left: 3%;
+}
+
+.chart{
+    position: relative;
+    bottom: 5.5%;
+    left: 90%;
+    font-size: 1.25rem;
+}
+
+.popular-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pop-card {
+    border-radius: 15px;
+    padding: 5px;
+    background-color: white;
+    margin: 3%;
+}
+
+.pop-card img{
+    object-fit: cover;
+    height: 200px;
+    width: 50%;
+    border-top-left-radius: 7%;
+    border-bottom-left-radius: 7%;
+    padding-right: 30px;
+    max-width: 100%;
+    
+}
+.pop-card a{
+    display: flex;
+    color: black;
+    text-decoration: none;
 }
