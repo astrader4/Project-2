@@ -78,3 +78,17 @@
       border-color: grey;
       color: #0065FC;
   }
+
+  .accomm {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .accomm-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+ 
