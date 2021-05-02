@@ -69,26 +69,24 @@
     padding: 0 8px 0 4px;
     text-align: unset;
     margin: 6px;
-  }
+}
 
-  .inform {
-      border-radius: 50%;
-      padding: 5px;
-      background-color: white;
-      border-color: grey;
-      color: #0065FC;
-  }
+.inform {
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    border-color: grey;
+    color: #0065FC;
+}
 
-  .accomm {
+.accomm {
     background-color: #f2f2f2;
     border-radius: 15px;
     padding: 10px;
-  }
+}
 
-  .accomm-card-wrap {
+.accomm-card-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-
- 
+}

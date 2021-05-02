@@ -1,2 +1,2 @@
 This is my Project 2 for OpenClassrooms. My site is online
-https://astrader4.github.io/laughing-sakura/
+https://astrader4.github.io/Project-2/
