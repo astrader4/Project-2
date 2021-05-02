@@ -71,6 +71,10 @@
     margin: 6px;
 }
 
+.info {
+    width: 25%;
+}
+
 .inform {
     border-radius: 50%;
     padding: 5px;
