@@ -189,7 +189,13 @@
 
 .act {
     padding: 10px;
-    width: 20%;
+    width: 100%;
+   }
+
+.act-card-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .act-card {
@@ -209,48 +215,33 @@
 
 .act-card img{
     object-fit: cover;
-    height: 125px;
-    width: 100%;
+    height: 100px;
+    width: 50%;
     border-top-left-radius: 7%;
     border-top-right-radius: 7%;
 }
-.first {
-    display: flex;
+
+.large img {
+    width: 15%;
+    height: 50%;
 }
 
-.first img {
-    width: 100%;
-    height: 400px;
+.fort img {
+    width: 15%;
+    height: 35%;
 }
 
-.second {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.island img{
+    width: 15%;
+    height: 15%;
 }
 
-.second img{
-    width: 100%;
+.dame img{
+    width: 15%;
+    height: 20%;
 }
 
-.second fort{
-    height: 70%;
-}
-
-.second island{
+.park img{
+    width: 15%;
     height: 30%;
-}
-
-.third {
-    display: flex;
-}    
-
-.third img{
-    width: 100%;
-    height: 400px;
-}
-.fourth {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
