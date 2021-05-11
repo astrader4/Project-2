@@ -196,16 +196,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: #0065FC 1px solid;
+    
 }
 
 .act-card {
     border-radius: 15px;
     padding: 5px;
     background-color: white;
-    margin: 3%;
+    /* margin: 0 3%; */
     border-bottom-right-radius: 7%;
     border-bottom-left-radius: 7%;
-    border-bottom-color: #f2f2f2;
+    border: green 1px solid;
+    width: 20%;
 }
 
 .act-card a{
@@ -215,33 +218,36 @@
 
 .act-card img{
     object-fit: cover;
-    height: 100px;
-    width: 50%;
+    width: 100%;
     border-top-left-radius: 7%;
     border-top-right-radius: 7%;
 }
 
 .large img {
-    width: 15%;
-    height: 50%;
+    height: 500px;
 }
 
 .fort img {
-    width: 15%;
-    height: 35%;
+    height: 350px;
 }
 
 .island img{
-    width: 15%;
-    height: 15%;
+    height: 150px;
 }
 
 .dame img{
-    width: 15%;
-    height: 20%;
+    height: 200px;
 }
 
 .park img{
-    width: 15%;
-    height: 30%;
+    height: 300px;
+}
+
+.second, .fourth {
+    width: 20%;
+
+}
+.second .act-card, .fourth .act-card{
+    width: 100%;
+
 }
