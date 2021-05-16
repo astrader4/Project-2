@@ -84,8 +84,12 @@
     margin: 6px;
 }
 
+.filter span {
+    font-size: .75rem;
+}
+
 .info {
-    width: 37%;
+    width: 38%;
 }
 
 .inform {
@@ -128,8 +132,12 @@
     border-radius: 15px;
     padding: 5px;
     background-color: white;
-    width: 25%;
+    width: 27%;
     margin: 2%;
+}
+
+.card h3, .card p {
+    font-size: .87rem;
 }
 
 .card img{
@@ -182,9 +190,13 @@
     margin: 3%;
 }
 
+.pop-card h3, .pop-card p{
+    font-size: .87rem;
+}
+
 .pop-card img{
     object-fit: cover;
-    height: 200px;
+    height: 150px;
     width: 50%;
     border-top-left-radius: 7%;
     border-bottom-left-radius: 7%;
@@ -200,7 +212,7 @@
 
 .act {
     padding: 10px;
-    width: 100%;
+    width: 98%;
    }
 
 .act-card-wrap {
@@ -262,7 +274,6 @@
 
 #foot{
     background-color: #f2f2f2;
-    border-radius: 10px;
     padding: 10px;
 }
 
