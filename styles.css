@@ -1,3 +1,7 @@
+html {
+    font-family: Raleway, sans-serif;
+}
+
 .main-nav {
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +93,22 @@
 }
 
 .info {
-    width: 38%;
+    display: flex;
+}
+
+.info i{
+    height: 15px;
+    width: 15px;
+    font-size: 0.75rem;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    padding-top: 4px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.info span{
+    width: 42%;
 }
 
 .inform {
@@ -106,14 +125,8 @@
     margin: 15px;
 }
 
-.section-wrap h3{
-    position:relative;
-    left: 2.5%;
-}
-
 .accomm h2 {
-    position: relative;
-    left: 2.5%;
+    margin-left: 3%;
 }
 .accomm {
     background-color: #f2f2f2;
@@ -136,16 +149,12 @@
     margin: 2%;
 }
 
-.card h3, .card p {
-    font-size: .87rem;
-}
-
 .card img{
     object-fit: cover;
-    height: 125px;
+    height: 100px;
     width: 100%;
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .card a{
@@ -153,10 +162,22 @@
     text-decoration: none;
 }
 
-.card p{
-    position: relative;
-    left: 2.5%;
+.card p, .card h3, .star{
+    margin: -.5px 0;
+    margin-left: 3px;
+    font-size: 0.75rem;
 }
+
+.blue{
+    color: #0065FC;
+    /* font-size: 0.75rem; */
+}
+
+.gray {
+    color: #f2f2f2;
+    /* font-size: 0.75rem; */
+}
+
 .popular {
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -165,13 +186,13 @@
 }
 
 .popular h2{
-    position: relative;
-    left: 3%;
+    margin-left: 3%;
+    margin-bottom: -0.25px;
 }
 
 .chart{
     position: relative;
-    bottom: 5.5%;
+    bottom: 5%;
     left: 90%;
     font-size: 1.25rem;
 }
@@ -190,14 +211,16 @@
     margin: 3%;
 }
 
-.pop-card h3, .pop-card p{
-    font-size: .87rem;
+.pop-card p, .pop-card h3, .star{
+    /* margin: -.5px 0; */
+    margin-left: 1px;
+    font-size: 0.75rem;
 }
 
 .pop-card img{
     object-fit: cover;
-    height: 150px;
-    width: 50%;
+    height: 100px;
+    width: 100px;
     border-top-left-radius: 7%;
     border-bottom-left-radius: 7%;
     padding-right: 30px;
@@ -211,7 +234,7 @@
 }
 
 .act {
-    padding: 10px;
+    padding-bottom: 5%;
     width: 98%;
    }
 
@@ -225,10 +248,10 @@
     border-radius: 15px;
     padding: 5px;
     background-color: white;
-    /* margin: 0 3%; */
-    border-bottom-right-radius: 7%;
-    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     width: 20%;
+    box-shadow: 10px 5px 5px #f2f2f2;
 }
 
 .act-card a{
@@ -239,32 +262,34 @@
 .act-card img{
     object-fit: cover;
     width: 100%;
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .large img {
-    height: 500px;
+    height: 300px;
 }
 
 .fort img {
-    height: 350px;
+    height: 210px;
 }
 
 .island img{
-    height: 150px;
+    height: 90px;
 }
 
 .dame img{
-    height: 200px;
+    height: 120px;
 }
 
 .park img{
-    height: 300px;
+    height: 180px;
 }
 
 .second, .fourth {
     width: 20%;
+    margin: 5px 0;
+    padding: 5px;
 
 }
 
@@ -301,4 +326,11 @@
 #assist {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+    .section-wrap{
+        flex-direction: column-reverse;
+        border: 5px solid orange;
+    }
 }
