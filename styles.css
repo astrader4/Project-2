@@ -66,6 +66,7 @@ h1 {
     color: black;
     opacity: 1;
     font-weight: 700;
+    font-size: 1rem;
 }
 
 .button {
@@ -374,7 +375,31 @@ h2 {
 }
 
 @media screen and (min-width: 450px) and (max-width: 900px) {
-    
+    .btn-wrap {
+        width: 55%;
+    }
+    .info span {
+       width: 100%;
+   }
+    .accomm {
+       width: 50%;
+   }
+
+    .card {
+    width: 40%;
+   }
+
+   .popular {
+       width: 40%;
+   }
+
+   .pop-card {
+       height: 140px;
+   }
+
+   .pop-card img {
+       height: 140px;
+   }
 }
 
 @media screen and (max-width: 450px) {
@@ -450,7 +475,8 @@ h2 {
     }
 
     .marker {
-        height: 45px;
+        height: 38px;
+        padding-top: 20px;
     }
 
     .bar {
