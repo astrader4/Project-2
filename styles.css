@@ -17,17 +17,27 @@ header {
     flex-wrap: wrap;
 }
 
-#nav a{
-    color: blue;
+#nav a {
+    color: #0065FC;
     text-decoration: none;
 }
 
-#nav p{
-    padding: 0px 20px;
+#nav p {
+    padding: 0px 30px;
 }
+
+.acc {
+    border-top: #0065FC solid 1px;
+}
+
+.acti {
+    color: grey;
+}
+
 
 h1 {
     margin-bottom: -1rem;
+    font-size: 1rem;
 }
 
 .search {
@@ -64,13 +74,17 @@ h1 {
 
 .btn-wrap {
     display: inline-flex;
-    width: 65%;
+    width: 60%;
     justify-content: space-between;
 }
 
 .filt{
-    font-size: 1.25rem;
+    font-size: 1.10rem;
     padding-top: 17px;
+}
+
+.filt span {
+    margin-right: -15px;
 }
 
 .icon {
@@ -133,6 +147,10 @@ h1 {
     margin: 15px;
 }
 
+h2 {
+    font-size: 1rem;
+}
+
 .accomm h2 {
     margin-left: 3%;
 }
@@ -178,12 +196,10 @@ h1 {
 
 .blue{
     color: #0065FC;
-    /* font-size: 0.75rem; */
 }
 
 .gray {
     color: #f2f2f2;
-    /* font-size: 0.75rem; */
 }
 
 .popular {
@@ -244,27 +260,35 @@ h1 {
 .act {
     padding-bottom: 5%;
     width: 98%;
+    padding-right: 10px;
+    padding-left: 10px;
    }
 
 .act-card-wrap {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;    
+    justify-content: space-between; 
 }
 
 .act-card {
     border-radius: 15px;
-    padding: 5px;
+    /* padding: 5px; */
     background-color: white;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
-    width: 20%;
+    width: 22%;
     box-shadow: 10px 5px 5px #f2f2f2;
+    border: steelblue solid 1px;
 }
 
 .act-card a{
     color: black;
     text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.act h3 {
+    margin-left: 3%;
 }
 
 .act-card img{
@@ -279,23 +303,23 @@ h1 {
 }
 
 .fort img {
-    height: 210px;
+    height: 150px;
 }
 
 .island img{
-    height: 90px;
+    height: 80px;
 }
 
 .dame img{
-    height: 120px;
+    height: 100px;
 }
 
 .park img{
-    height: 180px;
+    height: 140px;
 }
 
 .second, .fourth {
-    width: 20%;
+    width: 22%;
     margin: 5px 0;
     padding: 5px;
 
@@ -303,6 +327,7 @@ h1 {
 
 .second .act-card, .fourth .act-card{
     width: 100%;
+    justify-content: space-between;
 }
 
 #foot{
@@ -336,7 +361,7 @@ h1 {
     flex-direction: column;
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 450px) {
     .section-wrap{
         flex-direction: column-reverse;
         border: 5px solid orange;
