@@ -12,18 +12,17 @@ header {
     justify-content: space-between;
 }
 
-#nav {
-    display: flex;
-    flex-wrap: wrap;
+.main-nav a:nth-child(1) {
+    margin-right: 35%;
 }
 
-#nav a {
+.main-nav a {
     color: #0065FC;
     text-decoration: none;
 }
 
-#nav p {
-    padding: 0px 30px;
+.main-nav a:active {
+    border-top: #0065FC solid 1px;
 }
 
 .acc {
@@ -47,7 +46,7 @@ h1 {
 
 .marker {
     background-color: lightgrey;
-    height: 23px;
+    height: 25px;
     width: 33px;
     border-bottom-left-radius: 25%;
     border-top-left-radius: 25%;
@@ -59,9 +58,14 @@ h1 {
 }
 
 .bar {
-    height: 35px;
+    height: 30px;
     border-color: white;
-    
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-weight: 700;
 }
 
 .button {
@@ -72,19 +76,28 @@ h1 {
     border-bottom-right-radius: 20%;
 }
 
+.button i {
+    display: none;
+}
+
+#btn-filt {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .btn-wrap {
     display: inline-flex;
+    flex-wrap: wrap;
     width: 60%;
     justify-content: space-between;
+    white-space: nowrap;
 }
 
-.filt{
-    font-size: 1.10rem;
-    padding-top: 17px;
-}
 
-.filt span {
-    margin-right: -15px;
+.filt p {
+    margin-right: 5px;
 }
 
 .icon {
@@ -102,12 +115,13 @@ h1 {
 
 .filter {
     background-color: white;
-    border-radius: 20px;
+    border-radius: 40px;
     border-color: lightgray;
     font-size: 1rem;
-    padding: 0 8px 0 4px;
+    /* padding: 0 8px 0 4px; */
     text-align: unset;
-    margin: 6px;
+    /* margin: 6px; */
+    white-space: nowrap;
 }
 
 .filter span {
@@ -236,7 +250,6 @@ h2 {
 }
 
 .pop-card p, .pop-card h3, .star{
-    /* margin: -.5px 0; */
     margin-left: 1px;
     font-size: 0.75rem;
 }
@@ -278,7 +291,6 @@ h2 {
     border-bottom-left-radius: 15px;
     width: 22%;
     box-shadow: 10px 5px 5px #f2f2f2;
-    border: steelblue solid 1px;
 }
 
 .act-card a{
@@ -303,7 +315,7 @@ h2 {
 }
 
 .fort img {
-    height: 150px;
+    height: 140px;
 }
 
 .island img{
@@ -315,14 +327,14 @@ h2 {
 }
 
 .park img{
-    height: 140px;
+    height: 120px;
 }
 
 .second, .fourth {
     width: 22%;
-    margin: 5px 0;
-    padding: 5px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .second .act-card, .fourth .act-card{
@@ -361,9 +373,191 @@ h2 {
     flex-direction: column;
 }
 
-@media only screen and (max-width: 450px) {
+@media screen and (min-width: 450px) and (max-width: 900px) {
+    
+}
+
+@media screen and (max-width: 450px) {
+    html{
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: .9rem;
+    }
+    
+    .main-nav a{
+        width: 50%;
+    }
+
+    .main-nav a:nth-child(1){
+        margin-right: 0;
+        order: 1;
+    }
+
+    .main-nav a:nth-child(2){
+        order: 3;
+    }
+
+    .main-nav a:nth-child(3){
+        order: 4;
+    }
+
+    .main-nav a:nth-child(4){
+        order: 2;
+        text-align: right;
+    }
+
+    .main-nav a:active {
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+    }
+
+    .acc {
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+        text-align: center;
+    }
+
+
+    .acti{
+        border-bottom: #f2f2f2 2px solid;
+        text-align: center;
+    }
+
+    .bar {
+        width: 100%;
+    }
+
+    .typing  {
+        display: none;
+    }
+
+    .button i{
+        display: block;
+    }
+
+    .search {
+        padding: 10px;
+    }
+
+    .marker {
+        height: 45px;
+    }
+
+    .bar {
+        height: 50px;
+    }
+
+    .button {
+        height: 58px;
+    }
+    
+    .btn-wrap {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .filter {
+        margin: 5px 0;
+    }
+    .filter span {
+        font-size: 1.2rem;
+    }
+
+    .btn-wrap button:nth-child(1){
+        order: 1;
+    }
+
+    .btn-wrap button:nth-child(2){
+       order: 3; 
+    }
+
+    .btn-wrap button:nth-child(3){
+        order: 2;
+    }
+
+    .btn-wrap button:nth-child(4){
+        order: 4;
+    }
+
+    .info {
+        margin-bottom: 2px;
+    }
+
+    .info span {
+        width: 100%;
+    }
+    
     .section-wrap{
         flex-direction: column-reverse;
-        border: 5px solid orange;
+    }
+
+    .popular {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+
+    .pop-card img {
+        height: 120px;
+    }
+
+    .chart {
+        bottom: 23px;
+    }
+
+    .accomm h2, .accomm h3{
+        margin: 3px 0;
+    }
+
+    .accomm-card-wrap {
+        flex-direction: column;
+    }
+
+    .accomm {
+        width: 100%;
+        background-color: white;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+        box-shadow: 10px 5px 5px #f2f2f2;
+        padding: 0;
+        margin: 15px 0;
+    }
+
+    .act img {
+        height: 100px;
+    }
+
+    .act-card-wrap{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .act-card {
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    
+    .second, .fourth {
+        width: 95%;
+    }
+
+    #foot-card-wrap{
+        flex-direction: column;
     }
 }

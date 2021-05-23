@@ -1,4 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/15546c2803.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -11,7 +19,7 @@
     <header>
         <nav class="main-nav">
             <a href="index.html"> <img src="images/Reservia.svg" alt="reservialogo" title="reservialogo"/></a>
-            <div id="nav">
+    
                 <a href="#accomm">
                     <div class="acc">
                         <p>Accommodations</p>
@@ -25,7 +33,6 @@
                 <a href="#">
                     <p><b>Sign up</b></p>
                 </a>
-            </div>
         </nav>
 
         <h1>Find a place for your dream vacation</h1>
@@ -36,35 +43,45 @@
             <nav class="search">
                 <i class="marker fas fa-map-marker-alt"></i>  
                 <input class="bar" type="text" placeholder="Marseille, France" name="search">   
-                <button class="button" type="search">Search</button>   
+                <button class="button">
+                    <div class="typing">
+                        Search
+                    </div> 
+                    <i class="mag fas fa-search"></i>
+                </button>   
             </nav>
-        </form>  
+        </form> 
+        
+        <section id="btn-filt">
 
-        <div class="btn-wrap">
             <div class="filt">
-                <span><b>Filters</b></span>
+                <p><b>Filters</b></p>
             </div>
 
-                <button class="filter" type="button">
-                    <i class="icon fas fa-money-bill-wave"></i>
-                    <span><b>Low cost</b></span>
-                </button>
-        
-                <button class="filter" type="button">
-                    <i class="icon fas fa-child"></i>
-                    <span><b>Family-friendly</b></span>
-                </button>
+            <div class="btn-wrap">
+                
 
-                <button class="filter" type="button">
-                    <i class="icon fas fa-heart"></i>
-                    <span><b>Romantic</b></span>
-                </button>
+                    <button class="filter" type="button">
+                        <i class="icon fas fa-money-bill-wave"></i>
+                        <span><b>Low cost</b></span>
+                    </button>
+            
+                    <button class="filter" type="button">
+                        <i class="icon fas fa-child"></i>
+                        <span><b>Family-friendly</b></span>
+                    </button>
 
-                <button class="filter" type="button">
-                    <i class="icon fas fa-dog"></i>
-                    <span><b>Pets allowed</b></span>
-                </button>
-        </div>  
+                    <button class="filter" type="button">
+                        <i class="icon fas fa-heart"></i>
+                        <span><b>Romantic</b></span>
+                    </button>
+
+                    <button class="filter" type="button">
+                        <i class="icon fas fa-dog"></i>
+                        <span><b>Pets allowed</b></span>
+                    </button>
+            </div>  
+            </section>
 
         <div class="info">
             <i class="inform fas fa-info"></i>
@@ -334,3 +351,5 @@
         </section>
     </footer>
 </body>
+
+</html>
