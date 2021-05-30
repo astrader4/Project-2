@@ -119,9 +119,8 @@ h1 {
     border-radius: 40px;
     border-color: lightgray;
     font-size: 1rem;
-    /* padding: 0 8px 0 4px; */
+    margin: 10px;
     text-align: unset;
-    /* margin: 6px; */
     white-space: nowrap;
 }
 
@@ -386,7 +385,7 @@ h2 {
    }
 
     .card {
-    width: 40%;
+        width: 40%;
    }
 
    .popular {
@@ -398,6 +397,18 @@ h2 {
    }
 
    .pop-card img {
+       height: 140px;
+   }
+
+   .act {
+       width: 95%;
+   }
+
+   .act-card {
+        width: 65%;
+   }
+
+   .fort img, .island img, .dame img, .park img {
        height: 140px;
    }
 }
